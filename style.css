@@ -14,6 +14,7 @@ body {
   width: var(--fullWidth);
   height: var(--fullHeight);
   font-family: "ITCStoneSans";
+  background-color: red;
 }
 
 .landingPage {
@@ -64,30 +65,35 @@ body {
 }
 
 .sections {
-  background-color: #f0f2f5;
+  background-color: #f2f2e8;
+  padding-top: 50px;
 }
 
 .section {
-  width: 100%;
-  display: grid;
-  grid-template-rows: 100px 1fr;
-  margin-bottom: 50px;
+  width: 50vw;
+  max-width: 800px;
+  min-width: 800px;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: grid;
+  grid-template-rows: 100px 1fr; */
+  margin-top: 50px;
 }
 
 .sectionTitle {
   font-size: 45px;
-  color: #03529f;
+  color: white;
   font-weight: 500;
   justify-self: center;
   align-self: center;
+  text-align: center;
+  background-color: #b2b17b;
 }
 
 .sectionMain {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
-  width: 60%;
-
   justify-self: center;
 }
 
@@ -100,7 +106,7 @@ body {
 }
 
 .sectionText {
-  width: 80%;
+  width: 100%;
   height: 100%;
   font-size: 16px;
   line-height: 28px;
@@ -109,6 +115,8 @@ body {
   flex-direction: row;
   align-items: center;
   box-sizing: border-box;
+  padding: 20px;
+  background-color: #cccaa6;
 }
 
 .sectionTextWord {
