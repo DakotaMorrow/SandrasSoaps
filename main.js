@@ -1,24 +1,13 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+export function setWidthHeight() {
+  let windowInnerWidth = window.innerWidth;
+  let windowInnerHeight = window.innerHeight;
+  let elementClientWidth = document.documentElement.clientWidth;
+  let elementClientHeight = document.documentElement.clientHeight;
+  let elementOffsetWidth = document.documentElement.offsetWidth;
+  let elementOffsetHeight = document.documentElement.offsetHeight;
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
-
-setupCounter(document.querySelector('#counter'))
+  let vh = windowInnerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+  let vw = elementClientWidth * 0.01;
+  document.documentElement.style.setProperty("--vw", `${vw}px`);
+}
