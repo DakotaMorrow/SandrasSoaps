@@ -1,6 +1,8 @@
 :root {
   --fullHeight: calc(var(--vh, 1vh) * 100);
   --fullWidth: calc(var(--vw, 1vw) * 100);
+  --fullHeight: 100vh;
+  --fullWidth: 100%;
 }
 
 @font-face {
@@ -111,14 +113,20 @@ body {
 }
 
 .sectionTitle {
-  font-size: 45px;
+  font-size: 30px;
   color: white;
   font-weight: 500;
-  justify-self: center;
+  /* justify-self: center;
   align-self: center;
-  text-align: center;
+  text-align: center; */
   background-color: #767167;
   width: 800px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  justify-items: center;
+  height: 60px;
 }
 
 .sectionMain {
@@ -219,6 +227,12 @@ body {
 
   .sectionTitle {
     width: 100%;
+    /* display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+    height: 60px; */
   }
   .sectionPhoto {
     width: 100vw;
