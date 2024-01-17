@@ -1,8 +1,8 @@
 :root {
   --fullHeight: calc(var(--vh, 1vh) * 100);
   --fullWidth: calc(var(--vw, 1vw) * 100);
-  --fullHeight: 100vh;
-  --fullWidth: 100%;
+  /* --fullHeight: 100vh;
+  --fullWidth: 100%; */
 }
 
 @font-face {

@@ -134,7 +134,7 @@
           </div>
         </div>
       </div>
-      <div class="section">
+      <div class="section" style="display: none">
         <div class="sectionTitle">Essential Oils</div>
         <div class="sectionMain">
           <div
@@ -244,15 +244,15 @@
     </div>
     <script type="module" src="/main.js"></script>
     <script type="module">
-      // import { setWidthHeight } from "/main.js";
+      import { setWidthHeight } from "/main.js";
 
-      // window.onload = window.onload = function () {
-      //   setWidthHeight();
-      //   window.onresize = function () {
-      //     setWidthHeight();
-      //     location.reload();
-      //   };
-      // };
+      window.onload = window.onload = function () {
+        setWidthHeight();
+        window.onresize = function () {
+          setWidthHeight();
+          location.reload();
+        };
+      };
     </script>
   </body>
 </html>
